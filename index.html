@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normalize Css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -10,25 +11,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Markup Homework 01</title>
   </head>
   <body>
     <header>
-      <a href="#">WEBSTUDIO</a>
-      <!-- Navigation Left side begin -->
+      <!-- Logo Begin -->
+      <a href="#" class="logo"
+        ><span class="logo-web">web</span
+        ><span class="logo-studio">studio</span></a
+      >
+      <!-- Logo End -->
+      <!-- Navigation Begin -->
       <nav>
-        <div>
-          <ul>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-        </div>
-        <!-- Navigation Left side end -->
+        <ul>
+          <li><a href="#" class="links">Studio</a></li>
+          <li><a href="#" class="links">Portfolio</a></li>
+          <li><a href="#" class="links">Contacts</a></li>
+        </ul>
+        <!-- Navigation  End -->
       </nav>
-      <!-- Navigation Right side begin -->
-      <div>
+      <!-- Address  Begin -->
+      <address>
         <ul>
           <li>
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -37,18 +48,19 @@
             <a href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
-      </div>
-      <!-- Navigation Right side end -->
+      </address>
+      <!-- Address End -->
     </header>
     <main>
-      <!-- Main Section Top begin -->
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <!-- Main Section Top Begin -->
+      <section class="main-section-top">
+        <h1>Effective Solutions</h1>
+        <h1>for Your Business</h1>
+        <button class="button-style" type="button">Order Service</button>
       </section>
-      <!-- Main Section Top end -->
-      <!-- Main Section Middle-Up begin -->
-      <section>
+      <!-- Main Section Top End -->
+      <!-- Main Section Middle-Up Begin -->
+      <section class="main-section-middle-up">
         <ul>
           <li>
             <h3>Strategy</h3>
@@ -80,50 +92,58 @@
           </li>
         </ul>
       </section>
-      <!-- Main Section Middle-Up end -->
+      <!-- Main Section Middle-Up End -->
       <!-- Main Section Middle-Down begin -->
-      <section>
+      <section class="main-section-middle-down">
         <h2>Our Team</h2>
         <ul>
           <li>
-            <img
-              src="./images/img-3.jpg"
-              alt="Mark Guerrero"
-              width="264"
-              height="260"
-            />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <div class="team-member">
+              <img
+                src="./images/img-3.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+              />
+              <h3>Mark Guerrero</h3>
+              <p>Product Designer</p>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/img-2.jpg"
-              alt="Tom Ford"
-              width="264"
-              height="260"
-            />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <div class="team-member">
+              <img
+                src="./images/img-2.jpg"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+              />
+              <h3>Tom Ford</h3>
+              <p>Frontend Developer</p>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/img-1.jpg"
-              alt="Camila Garcia"
-              width="264"
-              height="260"
-            />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <div class="team-member">
+              <img
+                src="./images/img-1.jpg"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+              />
+              <h3>Camila Garcia</h3>
+              <p>Marketing</p>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/img.jpg"
-              alt="Daniel Wilson"
-              width="264"
-              height="260"
-            />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <div class="team-member">
+              <img
+                src="./images/img.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+              />
+              <h3>Daniel Wilson</h3>
+              <p>UI Designer</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -133,7 +153,38 @@
         <h2>Our Portfolio</h2>
         <ul>
           <li>
-            <img src="" alt="" />
+            <div class="project-card">
+              <img src="./images/img-4.jpg" alt="Banking App" />
+              <h3>Banking App</h3>
+              <p>App</p>
+            </div>
+            <div class="project-card">
+              <img src="./images/img-5.jpg" alt="Banking App" />
+              <h3>Cashless Payment</h3>
+              <p>Marketing</p>
+            </div>
+            <div class="project-card">
+              <img src="./images/img-6.jpg" alt="Banking App" />
+              <h3>Meditation App</h3>
+              <p>App</p>
+            </div>
+          </li>
+          <li>
+            <div class="project-card">
+              <img src="./images/img-7.jpg" alt="Banking App" />
+              <h3>Banking App</h3>
+              <p>App</p>
+            </div>
+            <div class="project-card">
+              <img src="./images/img-8.jpg" alt="Banking App" />
+              <h3>Cashless Payment</h3>
+              <p>Marketing</p>
+            </div>
+            <div class="project-card">
+              <img src="./images/img-9.jpg" alt="Banking App" />
+              <h3>Meditation App</h3>
+              <p>App</p>
+            </div>
           </li>
         </ul>
       </section>
