@@ -157,3 +157,39 @@ address li a:hover {
   width: 264px;
   height: 260px;
 }
+
+.our-portfolio {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  align-items: space-between;
+  padding: 10px;
+}
+
+.our-portfolio img {
+  width: 360px;
+  height: 300px;
+}
+
+.project-card {
+  width: 360px;
+  height: 420px;
+  background-color: #fff;
+  border: 1px solid #e7e9fc;
+  margin: 16px 8px;
+  text-align: left;
+}
+
+footer {
+  width: 100%;
+  height: 312px;
+  background-color: #2e2f42;
+  color: #fff;
+  padding: 50px;
+}
+
+.footer-content {
+  display: block;
+  text-align: left;
+  width: 264px;
+}
